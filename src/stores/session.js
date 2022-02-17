@@ -10,6 +10,9 @@ export const useSessionStore = defineStore({
     isLoggedIn: (state) => !!state.token && !!state.user,
   },
   actions: {
+    endSession() {
+      (this.user = null), (this.token = null);
+    },
     setSession(user, token) {
       this.user = user;
       this.token = token;

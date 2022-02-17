@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import { useSessionStore } from "@/stores/session";
 
-import Admin from "../views/AdminView.vue";
+import Games from "../views/GamesView.vue";
 import Login from "../views/LoginView.vue";
 import Registration from "../views/RegistrationView.vue";
 
@@ -20,9 +20,9 @@ const router = createRouter({
       component: Registration,
     },
     {
-      path: "/admin",
-      name: "admin",
-      component: Admin,
+      path: "/games",
+      name: "games",
+      component: Games,
       //   component: () => import("../views/AboutView.vue"),
       meta: {
         restricted: true,

@@ -1,5 +1,35 @@
 :root {
+  /* Font family */
   --ff-main: "Crimson Pro", serif;
+
+  /* Font size */
+  --fs-200: 1.2rem;
+  --fs-400: 2rem;
+
+  /* Line height */
+  --lh-100: 1.3;
+
+  /* Spacing */
+  --sp-200: 0.4rem;
+  --sp-400: 0.8rem;
+
+  /* Colors */
+  --olive-100: #e9f5db;
+  --olive-200: #cfe1b9;
+  --olive-300: #b5c99a;
+  --olive-400: #97a97c;
+  --olive-500: #87986a;
+  --olive-600: #718355;
+
+  --shade-100: #f8f9fa;
+  --shade-200: #e9ecef;
+  --shade-300: #dee2e6;
+  --shade-400: #ced4da;
+  --shade-500: #adb5bd;
+  --shade-600: #6c757d;
+  --shade-700: #495057;
+  --shade-800: #343a40;
+  --shade-900: #212529;
 }
 
 *,
@@ -10,12 +40,14 @@
   position: relative;
   font-weight: normal;
   font-family: var(--ff-main);
+  font-size: var(--fs-200);
+  color: var(--shade-800);
 }
 
 body {
   min-height: 100vh;
   transition: color 0.5s, background-color 0.5s;
-  line-height: 1.6;
+  line-height: var(--lh-100);
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

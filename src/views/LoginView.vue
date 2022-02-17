@@ -27,7 +27,7 @@ export default {
           const { user, token } = response.data.data;
 
           this.setSession(user, token);
-          this.$router.push({ name: "admin" });
+          this.$router.push({ name: "games" });
         });
       // TODO: Show message after failure
     },
