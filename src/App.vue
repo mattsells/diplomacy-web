@@ -1,19 +1,20 @@
 <script>
 import { RouterLink, RouterView } from "vue-router";
 
-import Navbar from "@/components/Navbar.vue";
+import NavBar from "@/components/NavBar.vue";
 
 export default {
   components: {
+    NavBar,
     RouterLink,
     RouterView,
-    Navbar,
   },
 };
 </script>
 
 <template>
-  <Navbar></Navbar>
+  <NavBar></NavBar>
+
   <RouterLink to="/admin">Restricted</RouterLink>
   <br />
   <RouterLink to="/register">Registration</RouterLink>
